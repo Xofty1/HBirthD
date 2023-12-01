@@ -11,6 +11,7 @@ html {
   padding: 0;
 }
 body {
+  width: 100vw;
   overflow: hidden;
   -webkit-user-select: none; /* для веб-браузеров на базе WebKit, таких как Chrome и Safari */
   -moz-user-select: none; /* для браузеров Firefox */
@@ -132,16 +133,16 @@ body {
   color: darkturquoise;
 }
 .ver {
-  width: 70vmin;
+  width: 60vmin;
   margin: 8px 0;
-  margin-left: 30px;
+  /* margin-left: 30px; */
 }
 .hor {
-  height: 70vmin;
+  height: 60vmin;
   margin: 8px 0;
 }
 img {
-  width: 30vmin;
+  width: 25vmin;
   border-radius: 30px;
   margin: 10px;
 }
@@ -152,6 +153,7 @@ video {
   border-radius: 30px;
   background-color: darkturquoise;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   /* margin: 10px 10px; */

@@ -11,7 +11,7 @@ html {
   padding: 0;
 }
 body {
-  width: 100vw;
+  /* width: 100vw; */
   overflow: hidden;
   -webkit-user-select: none; /* для веб-браузеров на базе WebKit, таких как Chrome и Safari */
   -moz-user-select: none; /* для браузеров Firefox */
@@ -133,12 +133,12 @@ body {
   color: darkturquoise;
 }
 .ver {
-  width: 60vmin;
+  width: 50vmin;
   margin: 8px 0;
   /* margin-left: 30px; */
 }
 .hor {
-  height: 60vmin;
+  height: 50vmin;
   margin: 8px 0;
 }
 img {

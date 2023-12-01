@@ -1,0 +1,192 @@
+html {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+  -webkit-user-select: none; /* для веб-браузеров на базе WebKit, таких как Chrome и Safari */
+  -moz-user-select: none; /* для браузеров Firefox */
+  -ms-user-select: none; /* для Internet Explorer */
+  user-select: none;
+  font-family: "Montserrat", sans-serif;
+  /* font: 14pt "Roboto", sans-serif; */
+}
+
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: darkturquoise;
+  z-index: 1000;
+  transition: all 0.09s ease-out;
+}
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.for_h {
+  text-align: center;
+  color: darkturquoise;
+}
+.ver {
+  width: 55vw;
+  margin: 8px 0;
+}
+.hor {
+  height: 70vh;
+  margin: 8px 0;
+}
+img {
+  width: 30vw;
+  border-radius: 30px;
+}
+video {
+  border-radius: 10px;
+}
+.video_poz {
+  border-radius: 30px;
+  background-color: darkturquoise;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px 10px;
+}
+
+/* Общие стили для полоски прокрутки */
+::-webkit-scrollbar {
+  width: 8px; /* Ширина полоски прокрутки */
+}
+
+/* Стили для трека (бара) полоски прокрутки */
+::-webkit-scrollbar-track {
+  background: white; /* Цвет фона трека */
+}
+
+/* Стили для ручки (драгера) полоски прокрутки */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Цвет ручки прокрутки */
+  border-radius: 6px; /* Скругление углов ручки */
+}
+
+/* Стили при наведении на полоску прокрутки */
+::-webkit-scrollbar-thumb:hover {
+  background: darkturquoise; /* Цвет ручки при наведении */
+}
+.sleep {
+  height: 55vh;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.text {
+  font-size: 20px;
+  color: darkturquoise;
+  margin: 10px 5px;
+}
